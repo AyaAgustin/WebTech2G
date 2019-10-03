@@ -5,9 +5,17 @@
 			RESUME
 		</title>
 	</head>
+	<link href='https://fonts.googleapis.com/css?family=Aguafina Script' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
 	<style>
 		body{
-			background-color: rgb(31, 31, 30);
+			background: url("background1.jpg");
+			background-size: 1600px 800px;
+			text-align: center;
+  			color: #818078;
+  			font-family: Futura, sans-serif;
+  			font-size: 20px;
+			
 		}
 		ul {
   			list-style-type: none;
@@ -27,7 +35,7 @@
   			color: white;
   			font-family: "Comic Sans MS", cursive, sans-serif;
   			text-align: center;
-  			padding: 15px 100px;
+  			padding: 15px 80px;
   			text-decoration: none;
 		}
 
@@ -39,42 +47,91 @@
   			background-color: rgb(66, 66, 64);
 		}
 		.mottoto{
-			font-size: 30px;
-			font-family: "Comic Sans MS", cursive, sans-serif;
+			font-size: 80px;
+			font-family:'Berkshire Swash';
 			color: white;
-			text-align: center;
+			text-align: right;	
 		}
-		#Motto{
-			font-family: "Comic Sans MS", cursive, sans-serif;
-			text-align: center;
-			color: rgb(140, 140, 137);
+		.mottoto1{
+			font-size: 80px;
+			font-family:'Aguafina Script';
+			color: rgb(180, 185, 194);
+			text-align: right;		
 		}
-		.info{
-			font-size: 15px;
-			font-family: "Comic Sans MS", cursive, sans-serif;
+		.mottoto2{
+			font-size: 80px;
+			font-family:'Berkshire Swash';
 			color: white;
-			float:left;
+			text-align: right;	
 		}
+		.Basic Info{
+			max-width: 50%;  
+  			margin: 40px auto;
+		}
+		.work {
+  			line-height: 1em;
+  			position: relative;
+  			outline: 0;
+  			border: 0;
+  			color: black;
+  			text-align: center;
+  			height: 1.5em;
+  			opacity: 1;
+  			&:before {
+  			    content: '';
+  			    background: -webkit-linear-gradient(left, transparent, #818078, transparent);
+  			    background: -o-linear-gradient(left, transparent, #818078, transparent);
+  			    background: linear-gradient(to right, transparent, #818078, transparent);
+  			    position: absolute;
+  			    left: 0;
+  			    top: 50%;
+  			    width: 100%;
+  			    height: 1px;
+  			}
+  			&:after {
+    			content: attr(data-content);
+    			position: relative;
+    			display: inline-block;
+    			color: black;
+
+    			padding: 0 .5em;
+    			line-height: 1.5em;
+    
+    			color: #818078;
+    			background-color: #fcfcfa;
+  			}
+		}
+
+		
+		
 	</style>
 	<body>
 		<header>
 			<ul>
   				<li><a class="active" \>Mary Joy Agustin</a></li>
-  				<li><a href="#Basic Info">Short Background</a></li>
-  				<li><a href="#Motto">Motto</a></li>
+  				<li><a href="#"></a></li>
+  				<li><a href="#"></a></li>
+  				<li><a href="#"></a></li>
+  				<li><a href="#Basic Info">Resume</a></li>
   				<li><a href="#Contact">Contact</a></li>
 			</ul>
 		</header>
-		<section id="Motto">
-			<center><h1>MOTTO</h1></center>
-			<p class="mottoto">"M-atulog O-pang T-umangkad, T-umalino O-diba"</p>
+		<section>
+			<p class="mottoto">"KNOW yourself<p>
+			<p class="mottoto1">before you</p>
+			<p class="mottoto2">IMPROVE yourself"</p>
 		</section>
-		<section id="Basic Info">
-			<article class="info">
-				"Full name is Mary Joy D. Agustin, 19 years of age and is from the province of Bicol region. Currently a second year student studying at the University of the Cordilleras and is taking up Bachelor of Science in Information Technology Major in Web Technology Track."
-				<img src="logo.png">
-			</article>
+		<br>
+		<br>
+		<section class="Basic Info">
+			<hr class="work" data-content="WORK EXPERIENCE">
+			<p>WORK EXPERIENCE</p>
 
+			
 		</section>
+		<footer class="Contact">
+			
+		</footer>
+		
 	</body>
 </html>
