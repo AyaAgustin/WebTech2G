@@ -106,10 +106,23 @@
 	  		top: 0;
 	  		width: 100%;
 		}
+		#Basic{
+			background: rgb(23, 23, 23);
+
+		}
+		.column {
+  			float: right;
+  			width: 20%;
+  			padding: 10px;
+  			height: 400px; /* Should be removed. Only for demonstration */
+		}
+		.row:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+		}
 	
 
-		
-		
 	</style>
 	<body>
 		<header>
@@ -119,7 +132,7 @@
 	  				<li><a href="#"></a></li>
 	  				<li><a href="#"></a></li>
 	  				<li><a href="#"></a></li>
-	  				<li><a href="#Basic Info">Resume</a></li>
+	  				<li><a href="#Basic">Resume</a></li>
 	  				<li><a href="#Contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -131,11 +144,23 @@
 		</section>
 		<br>
 		<br>
-		<section class="Basic Info">
+		<section id="Basic">
 			<hr class="work" data-content="WORK EXPERIENCE">
 			<p>WORK EXPERIENCE</p>
-
-			
+			<div class="row">
+			<div class="column">
+				<p>IT Intern</p>
+			</div>
+			<div class="column">
+				<ul>
+					<li>Mega Tower</li>
+					<li>Home Asia Properties</li>
+					<li>Sandico St. Baguio City</li>
+					<li>June-July 2018</li>
+				</ul>
+			</div>
+		</div>
+	
 		</section>
 		<footer class="Contact">
 			
